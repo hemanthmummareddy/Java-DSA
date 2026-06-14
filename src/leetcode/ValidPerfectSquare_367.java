@@ -1,13 +1,16 @@
-package com.leetcode;
+package leetcode;
 
-public class sqrtOfAnumber_69 {
+public class ValidPerfectSquare_367 {
     static void main(String[] args) {
         int n=40;
-        System.out.println(mySqrt(n));
+        System.out.println(isPerfectSquare(n));
     }
-    static int mySqrt(int n) {
-        if (n<2){
-            return n;
+    static boolean isPerfectSquare(int n) {
+        if(n==1){
+            return true;
+        }
+        if (n==2){
+            return false;
         }
         int s=0;
         int e=n/2;
@@ -16,7 +19,7 @@ public class sqrtOfAnumber_69 {
             int m=s+(e-s)/2;
             long square=(long)m*m;
             if(square==n){
-                return m;
+                return true;
 
             }
             if(square<n){
@@ -26,6 +29,6 @@ public class sqrtOfAnumber_69 {
             }
 
         }
-        return e;
+        return false;
     }
 }

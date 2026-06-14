@@ -1,4 +1,4 @@
-package com.leetcode;
+package leetcode;
 
 public class findInMountainArray1095 {
     static void main(String[] args) {

@@ -1,6 +1,4 @@
-package com.leetcode;
-
-import java.sql.SQLOutput;
+package leetcode;
 
 public class spiralMatrix {
     static void main(String[] args) {

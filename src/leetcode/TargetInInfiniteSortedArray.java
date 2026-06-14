@@ -1,6 +1,4 @@
-package com.leetcode;
-
-import java.util.Arrays;
+package leetcode;
 
 public class TargetInInfiniteSortedArray {
     static void main(String[] args) {

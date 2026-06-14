@@ -1,4 +1,4 @@
-package com.leetcode;
+package leetcode;
 
 class reverseInteger_7 {
     static void main(String[] args) {

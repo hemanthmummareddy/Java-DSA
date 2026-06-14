@@ -1,22 +1,23 @@
-package com.leetcode;
+package leetcode;
 
-import java.util.*;
+import java.util.Arrays;
 
-
-public class MultipleMissingIn1ton448 {
+public class DuplicateNumberINArray1toN287 {
     public static void main(String[] ar){
-        int[] arr={4,3,2,7,8,2,3,1};
+        int[] arr={1,1,1,1,1};
         System.out.println(missingN(arr));
     }
-    static List<Integer> missingN(int[] arr){
-        ArrayList<Integer> miss=new ArrayList<>();
+    static int missingN(int[] arr){
         int i=0;
         int n=arr.length;
         while(i<arr.length){
             int correct_i=arr[i]-1;
-            if(arr[i]!=arr[correct_i]){
+//            if(arr[i]==n){
+//                i++;
+//                continue;
+//            }
+            if( arr[i]<arr.length && arr[i]!=arr[correct_i]){
                 swap(i,correct_i,arr);
-                System.out.println("swapped");
             }
             else
                 i++;
@@ -24,15 +25,16 @@ public class MultipleMissingIn1ton448 {
         System.out.println(Arrays.toString(arr));
         for( i=0;i<arr.length;i++){
             if(arr[i]!=i+1){
-                miss.add(i+1);
+                return arr[i];
             }
 
         }
-        return miss;
+        return -1;
     }
     static void swap(int i,int j,int arr[]){
         int t=arr[i];
         arr[i]=arr[j];
         arr[j]=t;
     }
+
 }

@@ -1,4 +1,4 @@
-package com.leetcode;
+package leetcode;
 
 public class binarySeachINrotatedArray33 {
     static void main(String[] args) {

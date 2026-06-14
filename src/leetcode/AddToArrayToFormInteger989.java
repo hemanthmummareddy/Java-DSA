@@ -1,7 +1,6 @@
-package com.leetcode;
+package leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class AddToArrayToFormInteger989 {

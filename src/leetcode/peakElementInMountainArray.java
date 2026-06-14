@@ -1,4 +1,4 @@
-package com.leetcode;
+package leetcode;
 
 public class peakElementInMountainArray {
     static void main(String[] args) {
